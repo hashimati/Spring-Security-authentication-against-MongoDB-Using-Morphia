@@ -1,14 +1,9 @@
 package demo.config;
 
 
-import java.net.UnknownHostException;
-
 import org.mongodb.morphia.Datastore;
 import org.mongodb.morphia.Morphia;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import com.mongodb.MongoClient;
-import com.mongodb.ServerAddress;
 
 public class UserRepositoryDAO 
 {
