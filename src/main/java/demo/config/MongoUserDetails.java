@@ -3,15 +3,33 @@ package demo.config;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.mongodb.morphia.Morphia;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
+import com.mongodb.MongoClient;
+
 
 
 public class MongoUserDetails implements UserDetailsService{
+
+	private Morphia morphia; 
+
+	private MongoClient client; 
+	
+	/**
+	 * @param morphia
+	 * @param client
+	 */
+	public MongoUserDetails(Morphia morphia, MongoClient client) {
+		super();
+		this.morphia = morphia;
+		this.client = client;
+	}
+
 
 	@Override
 	public UserDetails loadUserByUsername(String username)
@@ -49,7 +67,7 @@ public class MongoUserDetails implements UserDetailsService{
 	public Person getUser(String username)
 	{
 		
-			Person p = new UserRepositoryDAO().findByUsername(username); 
+			Person p = new UserRepositoryDAO(morphia, client).findByUsername(username); 
 			return p; 
 			
 	}

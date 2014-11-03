@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServletRequest;
 
 
 
+
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,4 +24,6 @@ public class MainController
 		request.getSession().setMaxInactiveInterval(15 * 60);
 		return "Hello"; 
 	}
+	
+	
 }
