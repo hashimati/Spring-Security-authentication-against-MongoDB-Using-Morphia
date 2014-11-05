@@ -4,7 +4,37 @@ package demo.config;
 import org.mongodb.morphia.annotations.Entity;
 import org.mongodb.morphia.annotations.Id;
 
-
+/*
+ * This how the Person stored in Database
+ {
+        "_id" : ObjectId("54563be84524039f074ed878"),
+        "className" : "Person",
+        "username" : "hashimati",
+        "password" : "ahmed",
+        "firstName" : "Ahmed",
+        "lastName" : "Al-Hashmi",
+        "role" : 1
+}
+{
+        "_id" : ObjectId("54576eb578a117be49dcc90a"),
+        "className" : "Person",
+        "username" : "hash",
+        "password" : "ahmed",
+        "firstName" : "Ahmed",
+        "lastName" : "Al-Hashmi",
+        "role" : 1
+}
+{
+        "_id" : ObjectId("54576ed778a117be49dcc90b"),
+        "className" : "Person",
+        "username" : "ahmed",
+        "password" : "ahmed",
+        "firstName" : "Ahmed",
+        "lastName" : "Al-Hashmi",
+        "role" : 2
+}
+>
+ */
 
 @Entity("users")
 public class Person {
