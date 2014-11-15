@@ -22,30 +22,18 @@ public class UserRepositoryDAO
 		this.client = client; 
 	}
 	public Person findByUsername(String username)
-	{
-//		 Morphia morphia = new Morphia();; 
-//		
-//		
-//		
-//		 MongoClient client = null;
-//		try {
-//			client = new MongoClient(new ServerAddress("localhost", 27017));
-//		} catch (UnknownHostException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		} 
-//		
-		
+	{	
 		morphia.map(Person.class); 
 		System.out.println("I'm here"); 
 		
+		
+		//Set database;
 		Datastore ds  = morphia.createDatastore(client, "authDB");; 
+		
+		
 		Person p =
 		 ds.find(Person.class, "username", username).get();  
-		
-		
-		
-		
+			
 		return p; 
 		
 		

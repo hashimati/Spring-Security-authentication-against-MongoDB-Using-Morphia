@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>SpringSecurityDemo</name>
+	<name>spring-authentication-against-mongodb-using-morphia</name>
 	<comment></comment>
 	<projects>
 	</projects>

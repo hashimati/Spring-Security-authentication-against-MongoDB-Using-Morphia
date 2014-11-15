@@ -18,12 +18,6 @@ import com.mongodb.MongoClient;
 @ComponentScan
 @EnableAutoConfiguration
 public class Application {
-
-	
-	
-
-
-	
 	@Bean
 	@Autowired
 	public MongoClient mongoClient() throws UnknownHostException {

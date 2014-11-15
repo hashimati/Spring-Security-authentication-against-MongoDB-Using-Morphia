@@ -14,15 +14,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class MainController 
-{
-	
+{	
 	@PreAuthorize("hasRole('ROLE_ADMIN')")
 	@RequestMapping("/")
 	public @ResponseBody String hello(HttpServletRequest request)
 	{
 		request.getSession().setMaxInactiveInterval(15 * 60);
 		return "Hello"; 
-	}
-	
-	
+	}	
 }

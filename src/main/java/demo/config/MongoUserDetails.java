@@ -19,7 +19,6 @@ public class MongoUserDetails implements UserDetailsService{
 	private Morphia morphia; 
 
 	private MongoClient client; 
-	
 	/**
 	 * @param morphia
 	 * @param client
