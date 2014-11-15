@@ -10,22 +10,22 @@ This example developed using STS IDE with Gradle plugin. to run the application,
 <br/>
 2- Store users in the database. Example: <br/>
  {<br/>
-&nbsp&nbsp&nbsp&nbsp        "_id" : ObjectId("54563be84524039f074ed878"),<br/>
-&nbsp&nbsp&nbsp&nbsp        "className" : "Person",<br/>
-&nbsp&nbsp&nbsp&nbsp        "username" : "hashimati",<br/>
-&nbsp&nbsp&nbsp&nbsp        "password" : "ahmed",<br/>
-&nbsp&nbsp&nbsp&nbsp        "firstName" : "Ahmed",<br/>
-&nbsp&nbsp&nbsp&nbsp        "lastName" : "Al-Hashmi",<br/>
-&nbsp&nbsp&nbsp&nbsp        "role" : 1<br/>
+								"_id" : ObjectId("54563be84524039f074ed878"),<br/>
+        "className" : "Person",<br/>
+        "username" : "hashimati",<br/>
+       "password" : "ahmed",<br/>
+        "firstName" : "Ahmed",<br/>
+        "lastName" : "Al-Hashmi",<br/>
+        "role" : 1<br/>
 }<br/>
 {<br/>
-&nbsp&nbsp&nbsp&nbsp        "_id" : ObjectId("54576ed778a117be49dcc90b"),<br/>
-&nbsp&nbsp&nbsp&nbsp        "className" : "Person",<br/>
-&nbsp&nbsp&nbsp&nbsp        "username" : "ahmed",<br/>
-&nbsp&nbsp&nbsp&nbsp        "password" : "ahmed",<br/>
-&nbsp&nbsp&nbsp&nbsp        "firstName" : "Ahmed",<br/>
-&nbsp&nbsp&nbsp&nbsp        "lastName" : "Al-Hashmi",<br/>
-&nbsp&nbsp&nbsp&nbsp        "role" : 2<br/>
+        "_id" : ObjectId("54576ed778a117be49dcc90b"),<br/>
+        "className" : "Person",<br/>
+        "username" : "ahmed",<br/>
+        "password" : "ahmed",<br/>
+        "firstName" : "Ahmed",<br/>
+        "lastName" : "Al-Hashmi",<br/>
+        "role" : 2<br/>
 }<br/>
 <br/>
 3- Make the "username" variable unique. <br/>
