@@ -8,7 +8,7 @@ This example developed using STS IDE with Gradle plugin. to run the application,
 
 1-create MongodDB database named "authDB"<br/>
 <br/>
-2- Store users in the database. Example: <br/>
+2- Store users in the database "users" collection. Example: <br/>
  {<br/>
 								"_id" : ObjectId("54563be84524039f074ed878"),<br/>
         "className" : "Person",<br/>
