@@ -1,7 +1,7 @@
 Spring-Security-authentication-against-MongoDB-Using-Morphia
 ============================================================
 
-This a demo example that demonstrate Spring authentication against mongoDB using Morphia API<br/>
+This is a demo example that demonstrates Spring authentication against mongoDB using Morphia API<br/>
 
 
 This example developed using STS IDE with Gradle plugin. to run the application, follow these steps:<br/>
